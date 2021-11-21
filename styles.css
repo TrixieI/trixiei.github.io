@@ -79,7 +79,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 40px;
 }
 
 .burger {
@@ -129,7 +129,7 @@ nav {
     .burger {
         display: block;
     }
-    
+
 }
 
 .nav-active {
@@ -179,7 +179,7 @@ nav {
 
 .bg1 {
     background-color: #582A72;
-   
+
 }
 
 .footer {
@@ -187,7 +187,7 @@ nav {
             padding: 10px 10px 0px 10px;
             bottom: 0;
             width: 100%;
-            /* Height of the footer*/ 
+            /* Height of the footer*/
             height: 40px;
             background: #9775AA;
 }
@@ -209,7 +209,7 @@ nav {
     -o-border-radius: 12px;
     background-color: #22252D;
     overflow: hidden;
-    
+
 }
 
 form input {
