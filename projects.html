@@ -36,6 +36,9 @@
                     <li>
                         <a href="projects.html">Projects</a>
                     </li>
+                    <li>
+                        <a href="contact.html">Contact Me</a>
+                    </li>
                 </ul>  
                 <div class="burger">
                     <div class="line1"></div>        
@@ -45,7 +48,35 @@
         </nav>
         <h1 class="page-header">Welcome to my <span style="color:gold">projects page</span></h1>
         <h2 class="page-content">Work in Progress</h2>
-        <img src="images/workinprogress.svg">
+        <img class="img-right" src="images/workinprogress.svg">
+
+        <section class="calculator">
+            <form>
+                <input type="text" class="screen">
+            </form>
+            <div class="buttons">
+                <button type="button" class="btn btn-yellow" data-num="*">*</button>
+                <button type="button" class="btn btn-yellow" data-num="/">/</button>
+                <button type="button" class="btn btn-yellow" data-num="-">-</button>
+                <button type="button" class="btn btn-yellow" data-num="+">+</button>
+
+                <button type="button" class="btn btn-grey" data-num="9">9</button>
+                <button type="button" class="btn btn-grey" data-num="8">8</button>
+                <button type="button" class="btn btn-grey" data-num="7">7</button>
+                <button type="button" class="btn btn-grey" data-num="6">6</button>
+
+                <button type="button" class="btn btn-grey" data-num="5">5</button>
+                <button type="button" class="btn btn-grey" data-num="4">4</button>
+                <button type="button" class="btn btn-grey" data-num="3">3</button>
+                <button type="button" class="btn btn-grey" data-num="2">2</button>
+                <button type="button" class="btn btn-grey" data-num="1">1</button>
+                <button type="button" class="btn btn-grey" data-num="0">0</button>
+                <button type="button" class="btn btn-grey" data-num=".">.</button>
+                <button type="button" class="btn btn-green">=</button>
+                <button type="button" class="btn btn-red">c</button>
+            </div>
+        </section>
+
         <footer>
             <div class="footer"><p style="text-align: center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Fima Treiger All Rights Reserved</p>
             </div>

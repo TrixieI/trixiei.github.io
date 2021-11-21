@@ -35,3 +35,23 @@ function scrollFunction() {
     document.getElementById("nav").style.top = "-50px";
   }
 }
+
+(function(){
+
+    let screen = document.querySelector('.screen');
+    let buttons = document.querySelectorAll('.btn');
+    let clear = document.querySelector('.btn-red');
+    let equal = document.querySelector('.btn-green');
+
+    buttons.forEach(function(button){
+        button.addEventListener('click', function(e) {
+            let value = e.target.dataset.num;
+            screen.value += value;
+        })
+    });
+
+    clear.addEventListener('click', function(e) {
+        screen.value = "";
+    })
+
+})();
