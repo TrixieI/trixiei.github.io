@@ -8,10 +8,27 @@
     font-size: 25px;
 }
 
+.vid {
+    margin: 20px;
+    padding: 3px;
+    background-color: purple;
+}
+
 .p1 {
     font-size: 19px;
     overflow: auto;
     padding: 5px;
+}
+
+.img-left {
+    display: block;
+    margin-left: auto;
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-bottom: 50px;
+    padding: 3px;
+    background-color: purple;
 }
 
 .div1 {
@@ -23,7 +40,7 @@
 .img-right {
     display: block;
     margin-left: auto;
-    width: 50%;
+    width: 45%;
     height: auto;
     float: right;
     margin-bottom: 50px;
@@ -31,7 +48,7 @@
 
 h1 {
     text-align: center;
-    margin: 0px;
+    margin: auto;
     padding: 20px;
     padding-top: 70px;
     background-color: #260339
@@ -40,7 +57,7 @@ h1 {
 body {
     color: rgb(226,226,226);
     min-height: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     clear: both;
 }
 
@@ -190,6 +207,7 @@ nav {
             /* Height of the footer*/ 
             height: 40px;
             background: #9775AA;
+            
 }
 
 .page-content {
