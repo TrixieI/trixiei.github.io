@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    display: flex;
+    padding-bottom: 50px;
+ }
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+li {
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --mainColor: #ff9800;
+}
+
+span {
+    cursor: pointer;
+        background:
+           linear-gradient(
+             to right,
+             var(--mainColor) 0%,
+             var(--mainColor) 5px,
+             transparent 5px
+           );
+        background-repeat: repeat-x;
+        background-size: 100%;
+        color: white;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+
+span:hover {
+    background:
+     linear-gradient(
+       to right,
+       var(--mainColor) 0%,
+       var(--mainColor) 5px,
+       transparent
+     );
+}
+
+.a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+    .bg-img{
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+    color: white;
+    overflow: hidden;
+    background: #C04848;  /* fallback for old browsers */
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("/DI_Bootcamp/PortfolioProject/images/cover.jpeg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("/DI_Bootcamp/PortfolioProject/images/cover.jpeg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+
+    .container1 {
+        padding-bottom: 50px;
+        background: linear-gradient(#ff758c, #ff7eb3);
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 0.50rem;
+    -webkit-border-radius: 0.50rem;
+    -moz-border-radius: 0.50rem;
+    -ms-border-radius: 0.50rem;
+    -o-border-radius: 0.50rem;
+    width: auto;
+    }
+
+    .box img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 200px;
+        height: auto;
+}
+
+    body {
+        background-color: rgb(127, 182, 255);
+    }
+
+    .overlay {
+        margin: 10px 50px 20px 50px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0 30px 0;
+    }
+
+    .footer {
+        font-family: "Raleway";
+        background-color: #444;
+        text-align: center;
+        color: white;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .nav-list {
+            font-size: 1em;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 20px 10px 20px;
+        }
+    
+        .box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media only screen and (max-width: 1028) {
+        .nav-list {
+            font-size: 1em;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            }
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 20px 10px 20px;
+        }
+    
+        .box {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
