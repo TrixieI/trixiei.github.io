@@ -194,3 +194,13 @@ span:hover {
             flex-wrap: wrap;
         }
     }
+
+    
+    @media only screen and (max-width: 500) {
+        .nav-list {
+            font-size: 0.5em;
+        }
+        .navbar {
+            font-size: 0.5em;
+        }
+    }
