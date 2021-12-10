@@ -9,6 +9,9 @@ html,h1,h2,h3,h4,h5,h6,a{
     padding: 0;
 }
 
+.overlay h1 {
+    padding: 2rem;
+}
 
 .navbar {
     display: flex;
@@ -54,24 +57,28 @@ span {
         text-decoration: none;
     }
 
-span:hover {
-    background:
-     linear-gradient(
-       to right,
-       var(--mainColor) 0%,
-       var(--mainColor) 5px,
-       transparent
-     );
+    span:hover {
+        background:
+         linear-gradient(
+           to right,
+           var(--mainColor) 0%,
+           var(--mainColor) 5px,
+           transparent
+         );
+    }
+    
+html {
+    scroll-behavior: smooth;
 }
 
+
 .a:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 20%;
-    border-bottom: 0;
-    padding-bottom: .3em;
-    text-decoration: none;
+    background-color: orange;
+    transition: background 700ms linear;
+    -webkit-transition: background 700ms linear;
+    -moz-transition: background 700ms linear;
+    -ms-transition: background 700ms linear;
+    -o-transition: background 700ms linear;
 }
 
     .bg-img{
@@ -93,6 +100,8 @@ span:hover {
     .container1 {
         padding-bottom: 50px;
         background: linear-gradient(#ff758c, #ff7eb3);
+        text-align: center;
+        font-size: 1.5em;
     }
 
     .grid {
@@ -122,8 +131,14 @@ span:hover {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 200px;
-        height: auto;
+        width:100%;
+        height:200px;
+        object-fit: fill;
+
+}
+
+.box img:hover {
+    transform: skew(-10deg);
 }
 
     body {
@@ -142,6 +157,7 @@ span:hover {
         align-items: center;
         justify-content: center;
         padding: 30px 0 30px 0;
+        font-size: 1.5rem;
     }
 
     .footer {
@@ -151,7 +167,8 @@ span:hover {
         color: white;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {        
+        
         .nav-list {
             font-size: 1em;
             margin: 0;
@@ -195,12 +212,48 @@ span:hover {
         }
     }
 
-    
-    @media only screen and (max-width: 500) {
-        .nav-list {
-            font-size: 0.5em;
-        }
-        .navbar {
-            font-size: 0.5em;
-        }
+
+
+    /* Extra small devices (phones, 500px and down) */
+@media only screen and (max-width: 500px) {
+    .navbar {
+        display: none;
     }
+    .overlay {
+        margin-top: 50px;
+    }
+    .overlay h1 {
+        padding: 30px;
+    }
+
+    #mnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: orange;
+        position: fixed;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav-list {
+        display: flex;
+        list-style: none;
+        font-size: 0.5em;
+        margin: 0;
+    }
+    
+    li {
+        padding: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 501px){
+    #mnav{ display: none; }   /* hide it on larger screens */
+  }
