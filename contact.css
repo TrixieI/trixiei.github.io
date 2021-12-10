@@ -117,7 +117,6 @@ input[type=text], select, textarea, input[type=email] {
     background: linear-gradient(rgb(72,0,72,0.8), rgb(192,72,72,0.8)), url("images/cover3.jpeg"); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     }
 
