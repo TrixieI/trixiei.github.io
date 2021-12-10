@@ -81,6 +81,10 @@ html {
     -o-transition: background 700ms linear;
 }
 
+#di {
+    width: 50%;
+}
+
     .bg-img{
     height: 70vh;
     width: 100%;
@@ -141,9 +145,6 @@ html {
     transform: skew(-10deg);
 }
 
-    body {
-        background-color: rgb(127, 182, 255);
-    }
 
     .overlay {
         margin: 10px 50px 20px 50px;
